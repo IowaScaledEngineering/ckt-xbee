@@ -1078,7 +1078,7 @@ Element["" "0805" "C3" "0.1uF" 930.00mil 880.00mil -23.45mil 48.18mil 0 100 ""]
 
 	)
 
-Element["hidename" "XBEE-SMT" "XU3" "unknown" 1270.00mil 785.00mil 565.00mil 180.00mil 1 100 "selected"]
+Element["hidename" "XBEE-SMT" "XU3" "unknown" 1270.00mil 785.00mil 565.00mil 180.00mil 1 100 ""]
 (
 	Pad[354.33mil -13.0950mm 354.33mil -460.43mil 35.04mil 20.00mil 41.04mil "1" "1" "square"]
 	Pad[196.85mil -13.0950mm 196.85mil -460.43mil 35.04mil 20.00mil 41.04mil "3" "3" "square"]
@@ -1411,10 +1411,8 @@ Layer(5 "silk")
 	Text[940.00mil 1340.00mil 0 100 "CC BY-SA (C) 2018" "clearline"]
 	Text[430.00mil 1305.00mil 0 100 "RSSI" "clearline"]
 	Text[390.00mil 1390.00mil 0 100 "ASSOC" "clearline"]
-	Text[550.00mil 1255.00mil 0 100 "+" "clearline"]
 	Text[1400.00mil 935.00mil 0 100 "*" "clearline"]
 	Text[720.00mil 210.00mil 0 100 "+" "clearline"]
-	Text[550.00mil 1440.00mil 0 100 "+" "clearline"]
 	Text[450.00mil 25.00mil 0 100 "PWR" "clearline"]
 	Text[335.00mil 115.00mil 0 100 "XBEE RX" "clearline"]
 	Text[340.00mil 205.00mil 0 100 "XBEE TX" "clearline"]
@@ -1423,6 +1421,7 @@ Layer(5 "silk")
 	Text[945.00mil 1400.00mil 0 100 "https://www.iascaled.com" "clearline"]
 	Text[25.00mil 1100.00mil 0 100 "CKT-XBEE 1.0" "clearline"]
 	Text[25.00mil 330.00mil 0 100 "Iowa Scaled Engineering" "clearline"]
+	Text[710.00mil 1350.00mil 0 100 "+" "clearline"]
 )
 NetList()
 (
