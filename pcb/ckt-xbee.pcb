@@ -9,7 +9,7 @@ Grid[500.000000 0.0000 0.0000 0]
 PolyArea[200000000.000000]
 Thermal[0.500000]
 DRC[6.00mil 8.00mil 6.00mil 8.00mil 12.00mil 7.00mil]
-Flags("showdrc,rubberband,nameonpcb,clearnew,snappin")
+Flags("showdrc,nameonpcb,clearnew,snappin")
 Groups("1,c:2,s:3")
 Styles["Signal,10.00mil,26.00mil,12.00mil,10.00mil:Power,25.00mil,60.00mil,35.00mil,10.00mil:Fat,40.00mil,60.00mil,35.00mil,10.00mil:Skinny,0.08mil,0.36mil,0.20mil,10.00mil"]
 
@@ -841,6 +841,7 @@ Via[740.00mil 1200.00mil 26.00mil 0.0000 0.0000 12.00mil "" ""]
 Via[740.00mil 1160.00mil 26.00mil 0.0000 0.0000 12.00mil "" ""]
 Via[1050.00mil 1435.00mil 26.00mil 20.00mil 0.0000 12.00mil "" ""]
 Via[900.00mil 1435.00mil 26.00mil 20.00mil 0.0000 12.00mil "" ""]
+Via[775.00mil 1385.00mil 26.00mil 20.00mil 0.0000 12.00mil "" "thermal(1S)"]
 
 Element["hidename" "STANDOFF_HEX_n4" "H3" "unknown" 1830.00mil 170.00mil 0.0000 100.00mil 0 100 ""]
 (
@@ -961,7 +962,7 @@ Element["" "USB_A_SINGLE_AMPHENOL" "J1" "unknown" 275.00mil 750.00mil 310.00mil 
 	Pin[239.00mil -41.00mil 66.00mil 12.00mil 72.00mil 36.00mil "" "2" ""]
 	Pin[239.00mil 39.00mil 66.00mil 12.00mil 72.00mil 36.00mil "" "3" ""]
 	Pin[239.00mil -139.00mil 66.00mil 12.00mil 72.00mil 36.00mil "" "1" ""]
-	Pin[239.00mil 137.00mil 66.00mil 12.00mil 72.00mil 36.00mil "" "4" "thermal(0X,1X)"]
+	Pin[239.00mil 137.00mil 66.00mil 12.00mil 72.00mil 36.00mil "" "4" "thermal(1X)"]
 	ElementLine [-269.00mil 258.00mil 40.00mil 258.00mil 10.00mil]
 	ElementLine [-269.00mil -259.00mil -269.00mil 258.00mil 10.00mil]
 	ElementLine [-269.00mil -259.00mil 40.00mil -259.00mil 10.00mil]
@@ -1106,19 +1107,10 @@ Element["" "RPACK4-1206" "R4" "1k" 1515.00mil 1410.00mil -75.00mil -130.00mil 0 
 
 Element["" "0805" "D6" "unknown" 1295.00mil 1400.00mil 43.07mil -31.50mil 0 100 ""]
 (
-	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
-	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
-	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
+	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
 	ElementLine [27.55mil -3.93mil 27.55mil 3.93mil 10.00mil]
-
-	)
-
-Element["" "0805" "D7" "unknown" 1145.00mil 1400.00mil 43.07mil -31.50mil 0 100 ""]
-(
-	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
-	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
 	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
-	ElementLine [27.55mil -3.93mil 27.55mil 3.93mil 10.00mil]
 
 	)
 
@@ -1153,21 +1145,30 @@ Element["" "0805" "D4" "unknown" 590.43mil 1335.00mil 98.07mil -31.50mil 0 100 "
 
 	)
 
+Element["" "0805" "D7" "unknown" 1145.00mil 1400.00mil 43.07mil -31.50mil 0 100 ""]
+(
+	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
+	ElementLine [27.55mil -3.93mil 27.55mil 3.93mil 10.00mil]
+	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
+
+	)
+
 Element["" "0805" "D8" "unknown" 995.00mil 1400.00mil 43.07mil -31.50mil 0 100 ""]
 (
-	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
-	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
-	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
+	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
 	ElementLine [27.55mil -3.93mil 27.55mil 3.93mil 10.00mil]
+	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
 
 	)
 
 Element["" "0805" "D9" "unknown" 845.00mil 1400.00mil 43.07mil -31.50mil 0 100 ""]
 (
-	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
-	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
-	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
+	Pad[-3.93mil -35.43mil 3.93mil -35.43mil 51.18mil 20.00mil 57.18mil "1" "1" "square"]
+	Pad[-3.93mil 35.43mil 3.93mil 35.43mil 51.18mil 20.00mil 57.18mil "2" "2" "square"]
 	ElementLine [27.55mil -3.93mil 27.55mil 3.93mil 10.00mil]
+	ElementLine [-27.55mil -3.93mil -27.55mil 3.93mil 10.00mil]
 
 	)
 Layer(1 "top")
@@ -1390,6 +1391,8 @@ Layer(1 "top")
 	Line[30.0881mm 1475.00mil 1145.00mil 36.4599mm 10.00mil 20.00mil "clearline"]
 	Line[1050.00mil 1435.00mil 995.00mil 1435.00mil 10.00mil 20.00mil "clearline"]
 	Line[900.00mil 1435.00mil 845.00mil 1435.00mil 10.00mil 20.00mil "clearline"]
+	Line[1295.00mil 34.6601mm 795.43mil 34.6601mm 10.00mil 20.00mil "clearline"]
+	Line[795.43mil 34.6601mm 775.00mil 1385.00mil 10.00mil 20.00mil "clearline"]
 	Polygon("clearpoly")
 	(
 		[1300.00mil 240.00mil] [1030.00mil 240.00mil] [1030.00mil 40.00mil] [1300.00mil 40.00mil] 
@@ -1450,15 +1453,15 @@ Layer(2 "bottom")
 	)
 	Polygon("clearpoly")
 	(
-		[1610.00mil 1480.00mil] [20.00mil 1480.00mil] [20.00mil 350.00mil] [1610.00mil 350.00mil] 
-	)
-	Polygon("clearpoly")
-	(
 		[1370.00mil 20.00mil] [1610.00mil 20.00mil] [1610.00mil 380.00mil] [1370.00mil 380.00mil] 
 	)
 	Polygon("clearpoly")
 	(
 		[1355.00mil 20.00mil] [1515.00mil 20.00mil] [1515.00mil 385.00mil] [1355.00mil 385.00mil] 
+	)
+	Polygon("clearpoly")
+	(
+		[1610.00mil 1480.00mil] [20.00mil 1480.00mil] [20.00mil 350.00mil] [1610.00mil 350.00mil] 
 	)
 )
 Layer(3 "outline")
@@ -1498,6 +1501,9 @@ Layer(5 "silk")
 	Text[1330.00mil 935.00mil 0 100 "*" "clearline"]
 	Text[380.00mil 1305.00mil 0 100 "RSSI" "clearline"]
 	Text[340.00mil 1390.00mil 0 100 "ASSOC" "clearline"]
+	Text[910.00mil 1425.00mil 0 100 "+" "clearline"]
+	Text[1060.00mil 1425.00mil 0 100 "+" "clearline"]
+	Text[1210.00mil 1425.00mil 0 100 "+" "clearline"]
 )
 NetList()
 (
@@ -1549,6 +1555,10 @@ NetList()
 		Connect("C6-2")
 		Connect("C7-2")
 		Connect("D1-1")
+		Connect("D6-1")
+		Connect("D7-1")
+		Connect("D8-1")
+		Connect("D9-1")
 		Connect("J1-4")
 		Connect("R3-1")
 		Connect("R3-2")
@@ -1592,44 +1602,84 @@ NetList()
 	)
 	Net("unnamed_net7" "(unknown)")
 	(
+		Connect("R4-8")
+		Connect("XU3-17")
+	)
+	Net("unnamed_net8" "(unknown)")
+	(
+		Connect("R4-7")
+		Connect("XU3-18")
+	)
+	Net("unnamed_net9" "(unknown)")
+	(
+		Connect("R4-6")
+		Connect("XU3-19")
+	)
+	Net("unnamed_net10" "(unknown)")
+	(
+		Connect("R4-5")
+		Connect("XU3-20")
+	)
+	Net("unnamed_net11" "(unknown)")
+	(
 		Connect("D1-2")
 		Connect("R2-1")
 	)
-	Net("unnamed_net8" "(unknown)")
+	Net("unnamed_net12" "(unknown)")
 	(
 		Connect("C3-1")
 		Connect("U1-3")
 		Connect("U1-13")
 		Connect("U1-14")
 	)
-	Net("unnamed_net9" "(unknown)")
+	Net("unnamed_net13" "(unknown)")
 	(
 		Connect("R1-4")
 		Connect("U1-12")
 	)
-	Net("unnamed_net10" "(unknown)")
+	Net("unnamed_net14" "(unknown)")
 	(
 		Connect("R1-3")
 		Connect("U1-11")
 	)
-	Net("unnamed_net11" "(unknown)")
+	Net("unnamed_net15" "(unknown)")
 	(
 		Connect("D4-1")
 		Connect("R3-4")
 	)
-	Net("unnamed_net12" "(unknown)")
+	Net("unnamed_net16" "(unknown)")
 	(
 		Connect("D5-1")
 		Connect("R3-3")
 	)
-	Net("unnamed_net13" "(unknown)")
+	Net("unnamed_net17" "(unknown)")
 	(
 		Connect("D3-2")
 		Connect("R2-3")
 	)
-	Net("unnamed_net14" "(unknown)")
+	Net("unnamed_net18" "(unknown)")
 	(
 		Connect("D2-2")
 		Connect("R2-2")
+	)
+	Net("unnamed_net19" "(unknown)")
+	(
+		Connect("D7-2")
+		Connect("R4-1")
+	)
+	Net("unnamed_net20" "(unknown)")
+	(
+		Connect("D6-2")
+		Connect("R4-2")
+	)
+	Net("unnamed_net21" "(unknown)")
+	(
+		Connect("D8-2")
+		Connect("R4-3")
+	)
+	Net("unnamed_net22" "(unknown)")
+	(
+		Connect("D9-2")
+		Connect("R4-4")
 	)
 )
