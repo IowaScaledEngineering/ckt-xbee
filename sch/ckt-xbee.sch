@@ -320,7 +320,7 @@ refdes=R2
 T 48600 60000 5 10 0 2 0 0 1
 slot=1
 T 48600 60900 5 10 1 1 0 0 1
-value=1k
+value=330
 T 48600 60000 5 10 0 1 0 0 1
 footprint=RPACK4-1206
 }
@@ -359,7 +359,7 @@ refdes=R2
 T 50800 60200 5 10 0 2 0 0 1
 slot=3
 T 50900 61100 5 10 1 1 0 0 1
-value=1k
+value=330
 T 50800 60200 5 10 0 1 0 0 1
 footprint=RPACK4-1206
 }
@@ -368,7 +368,7 @@ C 49700 60200 1 90 0 res-pack4-1.sym
 T 49200 61100 5 10 1 1 0 0 1
 refdes=R2
 T 49700 61100 5 10 1 1 0 0 1
-value=1k
+value=330
 T 49700 60200 5 10 0 2 0 0 1
 slot=2
 T 49700 60200 5 10 0 1 0 0 1
@@ -377,7 +377,7 @@ footprint=RPACK4-1206
 C 50900 59700 1 90 0 led-3.sym
 {
 T 51050 59950 5 10 1 1 90 5 1
-device=GREEN (XB RX) LED
+device=AMBER (XBEE TX) LED
 T 50350 60150 5 10 1 1 90 0 1
 refdes=D3
 T 50900 59700 5 10 0 0 0 0 1
@@ -386,7 +386,7 @@ footprint=0805
 C 49800 59700 1 90 0 led-3.sym
 {
 T 49950 59950 5 10 1 1 90 5 1
-device=AMBER (XB TX) LED
+device=AMBER (XBEE RX) LED
 T 49250 60150 5 10 1 1 90 0 1
 refdes=D2
 T 49800 59700 5 10 0 0 0 0 1
@@ -417,7 +417,7 @@ C 56800 57800 1 180 0 res-pack4-1.sym
 T 55600 57800 5 10 1 1 0 6 1
 refdes=R4
 T 56200 57800 5 10 1 1 0 0 1
-value=1k
+value=330
 T 56800 57800 5 10 0 2 90 0 1
 slot=1
 T 56800 57800 5 10 0 1 90 0 1
@@ -434,7 +434,7 @@ footprint=RPACK4-1206
 T 55600 58400 5 10 1 1 0 6 1
 refdes=R4
 T 56200 58400 5 10 1 1 0 0 1
-value=1k
+value=330
 }
 N 56700 58300 56400 58300 4
 C 56800 59000 1 180 0 res-pack4-1.sym
@@ -446,7 +446,7 @@ footprint=RPACK4-1206
 T 55600 59000 5 10 1 1 0 6 1
 refdes=R4
 T 56200 59000 5 10 1 1 0 0 1
-value=1k
+value=330
 }
 N 56700 58900 56400 58900 4
 C 56800 59600 1 180 0 res-pack4-1.sym
@@ -458,7 +458,7 @@ footprint=RPACK4-1206
 T 55600 59600 5 10 1 1 0 6 1
 refdes=R4
 T 56200 59600 5 10 1 1 0 0 1
-value=1k
+value=330
 }
 C 57600 59300 1 0 1 led-3.sym
 {
