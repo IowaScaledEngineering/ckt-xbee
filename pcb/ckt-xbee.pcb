@@ -1490,7 +1490,7 @@ Layer(5 "silk")
 	Line[1995.00mil 5.00mil 1995.00mil 1495.00mil 10.00mil 20.00mil "clearline"]
 	Line[1790.00mil 5.00mil 1995.00mil 5.00mil 10.00mil 20.00mil "clearline"]
 	Line[1780.00mil 1495.00mil 1995.00mil 1495.00mil 10.00mil 20.00mil "clearline"]
-	Text[1200.00mil 1165.00mil 0 100 "CC BY-SA (C) 2018" "clearline"]
+	Text[1200.00mil 1165.00mil 0 100 "CC BY-SA (C) 2019" "clearline"]
 	Text[720.00mil 210.00mil 0 100 "+" "clearline"]
 	Text[450.00mil 25.00mil 0 100 "PWR" "clearline"]
 	Text[335.00mil 115.00mil 0 100 "XBEE RX" "clearline"]
