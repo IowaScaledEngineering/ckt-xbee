@@ -23,12 +23,12 @@
 #    
 #*************************************************************************
 
-FIRMWARE = /opt/Digi/XCTU-NG/radio_firmwares/XB3-24A/XB3-24A_2002.xml
-PROFILE = xb3_2002.xpro
+FIRMWARE = /opt/Digi/XCTU-NG/radio_firmwares/XB3-24A/XB3-24A_2003.xml
+PROFILE = xb3_2003.xpro
 
 BAUD = 9600
 NEWBAUD = 115200
-PORT = /dev/ttyUSB1
+PORT = /dev/ttyUSB0
 
 help:
 	@echo "make profile ..... upload profile"
