@@ -8,9 +8,9 @@ def xbeeParam(param, expectedValue):
 	read_val = ser.read(size=64).rstrip()
 	sys.stdout.write(param + "=" + read_val)
 	if(expectedValue == int(read_val,16)):   # ID requires hex, use hex for all to make things simple
-		sys.stdout.write(" OK\n")
+		sys.stdout.write(u"\u001b[32m OK\u001b[0m\n")
 	else:
-		sys.stdout.write(" Fail!\n")
+		sys.stdout.write(u"\u001b[31m Fail!\u001b[0m\n")
 
 parser = argparse.ArgumentParser()
 parser.add_argument('port')
@@ -34,7 +34,7 @@ try:
 	xbeeParam("ID", 0x225)
 	xbeeParam("RR", 6)
 	xbeeParam("RN", 3)
-	xbeeParam("PL", 2)
+#	xbeeParam("PL", 2)
         xbeeParam("PP", 8)
 	xbeeParam("SM", 0)
 	xbeeParam("BD", 7)

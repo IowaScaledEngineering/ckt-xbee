@@ -24,11 +24,12 @@
 #*************************************************************************
 
 FIRMWARE = /opt/Digi/XCTU-NG/radio_firmwares/XB3-24A/XB3-24A_2003.xml
-PROFILE = xb3_2003.xpro
+PROFILE  = xb3_2003.xpro
+PROFILEJ = xb3_2003_J.xpro
 
 BAUD = 9600
 NEWBAUD = 115200
-PORT = /dev/ttyUSB0
+PORT = /dev/ttyUSB1
 
 help:
 	@echo "make profile ..... upload profile"
@@ -45,6 +46,12 @@ profile: $(PROFILE)
 
 profile115k: $(PROFILE)
 	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILE) -p $(PORT) -b $(NEWBAUD) -F -v
+
+profile-J: $(PROFILE)
+	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILEJ) -p $(PORT) -b $(BAUD) -F -v
+
+profile-J-115k: $(PROFILE)
+	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILEJ) -p $(PORT) -b $(NEWBAUD) -F -v
 
 verify: 
 	/usr/bin/python verify.py $(PORT) $(NEWBAUD)
