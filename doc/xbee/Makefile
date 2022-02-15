@@ -47,10 +47,10 @@ profile: $(PROFILE)
 profile115k: $(PROFILE)
 	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILE) -p $(PORT) -b $(NEWBAUD) -F -v
 
-profile-J: $(PROFILE)
+profile-J: $(PROFILEJ)
 	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILEJ) -p $(PORT) -b $(BAUD) -F -v
 
-profile-J-115k: $(PROFILE)
+profile-J-115k: $(PROFILEJ)
 	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILEJ) -p $(PORT) -b $(NEWBAUD) -F -v
 
 verify: 
