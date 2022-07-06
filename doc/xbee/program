@@ -1,0 +1,23 @@
+#!/bin/bash
+
+while true
+do
+    pingoutput=
+    echo
+    while [[ "$pingoutput" != "OK" ]]
+    do
+    	echo -n .
+    	pingoutput=$(/usr/bin/python ping.py /dev/ttyUSB1 9600)
+    done
+    echo
+    echo Programming...
+    espeak "Programming"
+
+    make profile-J verify
+
+    if [ $? -eq 0 ]
+    then espeak "Complete"
+    else espeak "Failed"
+    fi
+
+done
