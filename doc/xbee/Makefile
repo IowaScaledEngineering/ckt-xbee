@@ -23,9 +23,9 @@
 #    
 #*************************************************************************
 
-FIRMWARE = /opt/Digi/XCTU-NG/radio_firmwares/XB3-24A/XB3-24A_2003.xml
-PROFILE  = xb3_2003.xpro
-PROFILEJ = xb3_2003_J.xpro
+FIRMWARE = /opt/Digi/XCTU-NG/radio_firmwares/XB3-24A/XB3-24A_200D.xml
+PROFILE  = xb3_200D.xml
+PROFILEJ = xb3j_200D.xml
 
 BAUD = 9600
 NEWBAUD = 115200
