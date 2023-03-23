@@ -54,4 +54,4 @@ profile-J-115k: $(PROFILEJ)
 	/opt/Digi/XCTU-NG/XCTUcmd load_profile -f $(PROFILEJ) -p $(PORT) -b $(NEWBAUD) -F -v
 
 verify: 
-	/usr/bin/python verify.py $(PORT) $(NEWBAUD)
+	/usr/bin/python3 verify.py $(PORT) $(NEWBAUD)
