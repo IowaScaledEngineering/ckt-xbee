@@ -13,7 +13,7 @@ do
     echo Programming...
     espeak "X B Programming"
 
-    make firmware profile verify
+    make firmware profile-J verify
 
     if [ $? -eq 0 ]
     then espeak "X B Complete"
